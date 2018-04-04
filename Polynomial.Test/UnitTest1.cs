@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Polynomial.Test
 {
-	public class UnitTest1
+	public class UnitTests
 	{
 		private static Monomial monomial { get; } = new Monomial(1, 5);
 
@@ -52,7 +52,7 @@ namespace Polynomial.Test
 		}
 
 
-		public class MonomialData
+		private class MonomialData
 		{
 			public static IEnumerable<object[]> ThrowsData => new List<object[]>
 			{
@@ -81,7 +81,7 @@ namespace Polynomial.Test
 			};
 		};
 
-		public class PolynomialData
+		private class PolynomialData
 		{
 			public static IEnumerable<object[]> Data => new List<object[]>
 			{
